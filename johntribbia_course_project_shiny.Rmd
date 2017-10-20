@@ -1,7 +1,7 @@
 ---
-title: "R Markdown Presentation & Plotly Course Project"
+title: "Shiny Course Project"
 author: "John Tribbia"
-date: "10/5/2017"
+date: "10/15/2017"
 output: ioslides_presentation
 ---
 
@@ -9,12 +9,13 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 ## Overview
+  
+#### This presentation contains documentation for the Texas House Sale Price interactive plot application. The application can be found [**here**](https://johntribbia.shinyapps.io/shiny-app-reproducible-research/)
 
-#### This presentation contains documentation for the Texas House Sale Price interactive plot application. The application can be found [**here**](https://avkch.shinyapps.io/Course-Project-Shiny-Application-and-Reproducible-Pitch)
-
-## Data Used
-####- This application plots median home sale price in Texas cities using the `txhousing` data set and allows the user to choose what city or cities they want to view on the plot.
+## Data Used. 
+####- This application plots median home sale price in Texas cities using the `txhousing` data set and allows the user to choose what city or cities they want to view on the plot.  
 ####- This data set contains the information about home sales of 46 Texas cities between 2000 and 2015 with 10 variables:
+  
 ```{r data, echo = FALSE,message=FALSE, warning=FALSE}
 library(ggplot2)
 data("txhousing")
@@ -24,10 +25,10 @@ data("txhousing")
 str(txhousing)
 ```
 
-## Shiny files
-
-### The application is built using Shiny package. The source code can be found in 2 files:
-####- `ui.R`
-####- `server.R`
-
-### Both files can be found here: [GitHub repo](https://github.com/avkch/Course-Project-Shiny-Application-and-Reproducible-Pitch)
+## Shiny files. 
+  
+### The application is built using Shiny package. The source code can be found in 2 files:  
+####- `ui.R`. 
+####- `server.R`. 
+  
+### Both files can be found here: [GitHub repo](https://github.com/johntribbia/shiny-app-reproducible-research)
